@@ -1,0 +1,421 @@
+/**
+* General
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+h1.title {
+    font-size: 7vh;
+}
+
+canvas.backgroundbello {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul:not(.not-inline-list) {
+    display: inline-flex;
+}
+
+/**
+* Prima slide
+*/
+
+.primaslide h1,
+.primaslide a {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+.primaslide h1.title {
+    position: relative;
+    top: 45vh;
+}
+
+.primaslide .nonsocomechiamarlo-alto-destra {
+    position: absolute;
+    right: -5vh;
+    top: -5vh;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    background-color: rgb(160,0,255);
+    
+    z-index: 100;
+
+    animation-name: fade-out-grosso-alto-destra;
+    animation-duration: 1.75s;
+    animation-direction: reverse;
+}
+
+.primaslide .nonsocomechiamarlo-alto-destra:not(.active) {
+    animation-direction: reverse;
+}
+
+.primaslide .nonsocomechiamarlo-alto-destra.active {
+    animation-direction: normal;
+}
+
+.primaslide .nonsocomechiamarlo-alto-destra::before {
+    content: '';
+    position: inherit;
+    right: 15vh;
+    top: -2.5vh;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(190,0,200);
+}
+
+.primaslide .nonsocomechiamarlo-alto-destra::after {
+    content: '';
+    position: inherit;
+    right: -4.5vh;
+    top: 15vh;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(200,0,255);
+}
+
+.primaslide .nonsocomechiamarlo-alto-sinistra {
+    position: absolute;
+    left: -5vh;
+    top: -5vh;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    background-color: rgb(0,210,0);
+}
+
+.primaslide .nonsocomechiamarlo-alto-sinistra {
+    animation-name: fade-out-grosso-alto-sinistra;
+    animation-duration: 1.75s;
+    animation-direction: reverse;
+}
+
+.primaslide .nonsocomechiamarlo-alto-sinistra::before {
+    content: '';
+    position: inherit;
+    left: 15vh;
+    top: -2.5vh;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(0,190,0);
+}
+
+.primaslide .nonsocomechiamarlo-alto-sinistra::after {
+    content: '';
+    position: inherit;
+    left: -4.5vh;
+    top: 15vh;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(0,245,0);
+}
+
+.primaslide .nonsocomechiamarlo-basso-destra {
+    position: absolute;
+    right: -5vh;
+    bottom: -5vh;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    background-color: rgb(0,160,255);
+
+    animation-name: fade-out-grosso-basso-destra;
+    animation-duration: 1.75s;
+    animation-direction: reverse;
+}
+
+.primaslide .nonsocomechiamarlo-basso-destra::before {
+    content: '';
+    position: inherit;
+    right: 15vh;
+    bottom: -2.5vh;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(0,190,200);
+}
+
+.primaslide .nonsocomechiamarlo-basso-destra::after {
+    content: '';
+    position: inherit;
+    right: -4.5vh;
+    bottom: 15vh;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(0,200 ,255);
+}
+
+.primaslide .nonsocomechiamarlo-basso-sinistra {
+    position: absolute;
+    left: -5vh;
+    bottom: -5vh;
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    background-color: rgb(255,160,0);
+}
+
+.primaslide .nonsocomechiamarlo-basso-sinistra {
+    animation-name: fade-out-grosso-basso-sinistra;
+    animation-duration: 1.75s;
+    animation-direction: reverse;
+}
+
+.primaslide .nonsocomechiamarlo-basso-sinistra::before {
+    content: '';
+    position: inherit;
+    left: 15vh;
+    bottom: -2.5vh;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(200,190, 0);
+}
+
+.primaslide .nonsocomechiamarlo-basso-sinistra::after {
+    content: '';
+    position: inherit;
+    left: -4.5vh;
+    bottom: 15vh;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: rgb(255,200,0);
+}
+
+/**
+* Seconda Slide
+*/
+
+.secondaslide h1.title {
+    position: relative;
+    top: 5vh;
+}
+
+.secondaslide ul {
+    position: relative;
+    top: 10vh;
+}
+
+.secondaslide ul li {
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+}
+
+.secondaslide a.infoacaso {
+    position: relative;
+    top: 4.5vh;
+    font-size: 3rem;
+}
+
+.album {
+    background-color: #202020;
+    padding: 2vh;
+    border-radius: 1vh;
+    line-height: 3vh;
+}
+
+.album * {
+    margin: 0;
+    padding: 0;
+}
+
+.album img {
+    width: 15vh;
+    height: auto;
+    border-radius: 1vh;
+}
+
+.album h5, .album h6 {
+    position: relative;
+    top: 1.5vh;
+}
+
+.album h5 {
+    font-size: 3.5vh;
+}
+
+.album h6 {
+    font-size: 2vh;
+}
+
+.video {
+    text-align: left;
+    background-color: 202020;
+    padding: 2.5vh;
+    border-radius: 1vh;
+}
+
+.video * {
+    margin: 0;
+}
+
+.video img {
+    width: 45vh;
+    height: auto;
+    border-radius: 1vh;
+}
+
+.video h5 {
+    font-size: 3vh;
+}
+
+.video h6 {
+    font-size: 2vh;
+    color: #ababab;
+}
+
+.video h5, .video h6 {
+    position: relative;
+    top: 1vh;
+}
+
+#skak {
+    margin-top: 1.5vh;
+}
+
+/**
+* Terza Slide
+*/
+
+.timeline {
+    position: absolute;
+    top: 45vh;
+    left: 30vh;
+    width: 85vh;
+    height: 1vh;
+    border-radius: 1vh;
+    background-color: #202020;
+}
+
+.timeline .date:not(.active) {
+    position: inherit;
+    color: #555555;
+    bottom: 4vh;
+}
+
+.timeline .date {
+    position: relative;
+    bottom: 4.5vh;
+}
+
+.timeline .date,
+.timeline .paragraph {
+    animation: none;
+    transition: all ease-in-out 0.15s;
+}
+
+.timeline .date:not(#date_2019) {
+    position: relative;
+    margin-left: 10vh;
+}
+
+.timeline .date#date_2019 {
+    bottom: 1vh;
+    left: 1vh;
+}
+
+.timeline .date#date_2019.active {
+    bottom: 4vh;
+}
+
+.timeline h1 {
+    display: inline-flex;
+}
+
+.timeline .date.active {
+    color: white;
+}
+
+.timeline a.paragraph {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    width: 75vh;
+    font-size: 3.5vh;
+    font-weight: 700;
+}
+
+.timeline a.paragraph span {
+    font-weight: 500;
+}
+
+/**
+* Quarta Slide
+*/
+
+.quartaslide ul {
+    position: relative;
+    top: 2vh;
+}
+
+.quartaslide ul li {
+    margin-left: 1.5vh;
+    margin-right: 1.5vh;
+}
+
+.memberscard {
+    background-color: #202020;
+    padding: 2vh;
+    border-radius: 1vh;
+    line-height: 3vh;
+}
+
+.memberscard * {
+    margin: 0;
+    padding: 0;
+}
+
+.memberscard img {
+    width: 15vh;
+    height: auto;
+    border-radius: 1vh;
+}
+
+.memberscard h1, .memberscard h6 {
+    position: relative;
+    top: 1.5vh;
+}
+
+.memberscard h1 {
+    font-size: 3.5vh;
+}
+
+.memberscard h6 {
+    font-size: 2.20vh;
+}

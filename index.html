@@ -1,0 +1,187 @@
+<!--
+# Fatto da Francesco Piantone
+-->
+
+<html>
+    <head>
+        <!--
+        # Titolo e Metadati
+        -->
+        <title>Il mio gruppo musicale preferito</title>
+
+        <!--
+        # Stili
+        -->
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="stylesheet" href="styles/animazioni.css">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!--
+        # Script
+        -->
+        <script src="scripts/vettore.js"></script>
+    </head>
+    <body>
+        <canvas class="backgroundbello"></canvas>
+
+        <!--
+        # Prima slide
+        -->
+        <div class="primaslide slide slide1">
+            <div class="nonsocomechiamarlo nonsocomechiamarlo-alto-destra"></div>
+            <div class="nonsocomechiamarlo nonsocomechiamarlo-alto-sinistra"></div>
+            <div class="nonsocomechiamarlo nonsocomechiamarlo-basso-destra"></div>
+            <div class="nonsocomechiamarlo nonsocomechiamarlo-basso-sinistra"></div>
+
+            <h1 class="title ff-helveticabold">My favorite artists.</h1>
+        </div>
+
+        <div class="hidden secondaslide slide slide2">
+            <h1 class="title ff-helveticabold">Pinguini Tattici Nucleari</h1>
+            <a class="infoacaso ff-helvetica">17 singles - 7 albums</a>
+
+            <ul>
+                <li>
+                    <div class="album">
+                        <img src="assets/images/fakenews.png" loading="lazy" class="albumphoto">
+                        <h5 class="ff-helveticabold">Fake News</h5>
+                        <h6 class="ff-helvetica">2022</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="album">
+                        <img src="assets/images/ahia.png" loading="lazy" class="albumphoto">
+                        <h5 class="ff-helveticabold">Ahia</h5>
+                        <h6 class="ff-helvetica">2020</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="album">
+                        <img src="assets/images/fuoridallhype.png" loading="lazy" class="albumphoto">
+                        <h5 class="ff-helveticabold">Fuori dall'hype</h5>
+                        <h6 class="ff-helvetica">2019</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="album">
+                        <img src="assets/images/gioventubrucata.png" loading="lazy" class="albumphoto">
+                        <h5 class="ff-helveticabold">Gioventù brucata</h5>
+                        <h6 class="ff-helvetica">2017</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="album">
+                        <img src="assets/images/diamouncalcioallaldila.png" loading="lazy" class="albumphoto">
+                        <h5 class="ff-helveticabold">Diamo un calcio all'aldilà</h5>
+                        <h6 class="ff-helvetica">2015</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="album">
+                        <img src="assets/images/grandeilre.png" loading="lazy" class="albumphoto">
+                        <h5 class="ff-helveticabold">Il re è nudo</h5>
+                        <h6 class="ff-helvetica">2014</h5>
+                    </div>
+                </li>
+                <li>
+                    <div class="album">
+                        <img src="assets/images/cartonianimali.png" loading="lazy" class="albumphoto">
+                        <h5 class="ff-helveticabold">Cartoni animali</h5>
+                        <h6 class="ff-helvetica">2012</h5>
+                    </div>
+                </li>
+            </ul>
+            <ul id="skak">
+                <li>
+                    <div class="video ff-helveticabold">
+                        <img src="assets/images/pastellobianco.png" loading="lazy">
+                        <h5>Pastello Bianco</h5>
+                        <h6>48 Mln di visualizzazioni &#8226; 3 anni fa</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="video ff-helveticabold">
+                        <img src="assets/images/ridere.png" loading="lazy">
+                        <h5>Ridere</h5>
+                        <h6>41 Mln di visualizzazioni &#8226; 4 anni fa</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="video ff-helveticabold">
+                        <img src="assets/images/giovaniwannabe.png" loading="lazy">
+                        <h5>Giovani Wannabe</h5>
+                        <h6>39 Mln di visualizzazioni &#8226; 2 anni fa</h6>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hidden terzaslide slide slide3">
+            <h1 class="title ff-helveticabold">Career</h1>
+
+            <div class="timeline">
+                <h1 class="active date ff-helveticabold" id="date_2019">2019</h1>
+                <h1 class="date ff-helveticabold" id="date_2020">2020</h1>
+                <h1 class="date ff-helveticabold" id="date_2021">2021</h1>
+                <h1 class="date ff-helveticabold" id="date_2022">2022</h1>
+                <h1 class="date ff-helveticabold" id="date_2023">2023</h1>
+
+                <a class="ff-helvetica paragraph"></a>
+            </div>
+        </div>
+
+        <div class="hidden quartaslide slide slide4">
+            <h1 class="title ff-helveticabold">Members</h1>
+
+            <ul>
+                <li>
+                    <div class="memberscard">
+                        <img src="assets/images/ricky.png" loading="lazy">
+                        <h1 class="ff-helveticabold name">Riccardo Zanotti</h1>
+                        <h6 class="ff-helvetica strumento">Guitar and Voice</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="memberscard">
+                        <img src="assets/images/elio.png" loading="lazy">
+                        <h1 class="ff-helveticabold name">Elio Biffi</h1>
+                        <h6 class="ff-helvetica strumento">Accordion</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="memberscard">
+                        <img src="assets/images/paso.png" loading="lazy">
+                        <h1 class="ff-helveticabold name">Lorenzo Pasini</h1>
+                        <h6 class="ff-helvetica strumento">Guitar</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="memberscard">
+                        <img src="assets/images/pagani.png" loading="lazy">
+                        <h1 class="ff-helveticabold name">Simone Pagani</h1>
+                        <h6 class="ff-helvetica strumento">Bass</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="memberscard">
+                        <img src="assets/images/locati.png" loading="lazy">
+                        <h1 class="ff-helveticabold name">Matteo Locati</h1>
+                        <h6 class="ff-helvetica strumento">Drums</h6>
+                    </div>
+                </li>
+                <li>
+                    <div class="memberscard">
+                        <img src="assets/images/butt.png" loading="lazy">
+                        <h1 class="ff-helveticabold name">Nicola Buttafuoco</h1>
+                        <h6 class="ff-helvetica strumento">Guitar</h6>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!--
+        # Scripts
+        -->
+        <script src="scripts/losbarcoinnormandia.js"></script>
+    </body>
+</html>

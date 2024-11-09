@@ -1,0 +1,21 @@
+/**
+* Fonts
+*/
+
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('../assets/fonts/HelveticaNeuBold.ttf');
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../assets/fonts/HelveticaNeue.ttf');
+}
+
+.ff-helvetica {
+    font-family: 'Helvetica';
+}
+
+.ff-helveticabold {
+    font-family: 'HelveticaBold';
+}
