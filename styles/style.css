@@ -419,3 +419,88 @@ ul:not(.not-inline-list) {
 .memberscard h6 {
     font-size: 2.20vh;
 }
+
+/**
+* Quinta Slide
+*/
+
+input {
+    width: 55vh;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    text-align: left;
+
+    border-color: white;
+    border-radius: 1vh;
+    border-width: 0.25vh;
+    
+    border-style: solid;
+    transition: none;
+}
+
+input:hover,
+input:focus {
+    border-width: 0.5vh;
+    border-color: white;
+    outline: none;
+}
+
+.quintaslide ul {
+    position: relative;
+    top: 2vh;
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 75%;
+    left: 17.5%;
+    height: 65%;
+}
+
+.quintaslide ul li {
+    margin: 1.5vh;
+}
+
+.song {
+    background-color: #202020;
+    border-radius: 1vh;
+    line-height: 3vh;
+    padding-bottom: 2vh;
+    text-align: left;
+    z-index: 102;
+}
+
+.song:hover {
+    cursor: pointer;
+}
+
+.song * {
+    margin: 0;
+    padding: 0;
+}
+
+.song img {
+    top: 0;
+    left: 0;
+    width: 50vh;
+    height: auto;
+    border-radius: 1vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.song h1,
+.song h6 {
+    position: relative;
+    top: 1vh;
+    left: 1vh;
+}
+
+.song h1 {
+    font-size: 3.5vh;
+}
+
+.song h6 {
+    font-size: 2.20vh;
+    color: #555555;
+}

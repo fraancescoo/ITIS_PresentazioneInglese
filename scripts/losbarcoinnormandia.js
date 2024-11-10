@@ -54,7 +54,7 @@ function update() {
         }
     }else {
         slide++;
-        if(slide > 4) slide = 1;
+        if(slide > 5) slide = 1;
         updateslides();
         count = -1;
     }
