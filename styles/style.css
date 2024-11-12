@@ -477,7 +477,6 @@ input:focus {
 
 .song:hover {
     cursor: pointer;
-    backdrop-filter: blur(5vh);
 }
 
 .song * {
