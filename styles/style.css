@@ -446,18 +446,22 @@ input:focus {
     outline: none;
 }
 
-.quintaslide ul {
-    position: relative;
-    top: 2vh;
-    display: flex;
-    overflow-y: scroll;
+.songsdiv {
     overflow-x: hidden;
-    width: 75%;
-    left: 17.5%;
-    height: 65%;
+    overflow-y: scroll;
+    position: absolute;
+    top: 15vh;
+    width: 95%;
+    height: 75%;
+    left: 2.5%;
 }
 
-.quintaslide ul li {
+.songsdiv ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.songsdiv ul li {
     margin: 1.5vh;
 }
 
@@ -468,10 +472,12 @@ input:focus {
     padding-bottom: 2vh;
     text-align: left;
     z-index: 102;
+    transition: all ease-in-out 0.25s;
 }
 
 .song:hover {
     cursor: pointer;
+    backdrop-filter: blur(5vh);
 }
 
 .song * {

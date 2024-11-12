@@ -19,7 +19,7 @@ let _2021 = document.getElementById('date_2021');
 let _2022 = document.getElementById('date_2022');
 let _2023 = document.getElementById('date_2023');
 
-let slide = 0;
+let slide = 4;
 let count = -1;
 
 function updateslides() {
