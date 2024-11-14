@@ -38,6 +38,12 @@ const paragraph = document.getElementsByClassName('paragraph')[0];
                     case 'sudowoodo':
                         content = `The moral of Sudowoodo is "never judge what you can't water".<br>This phrase has two meanings:<br><br>1) Never judge anything we haven't taken care of (or don't know about)<br>2) In a gameboy pokemon game, if you watered Sudowoodo while he was sleeping on the path,<br>he would wake up and show himself as pokemon rock, then you<br>could defeat him or capture him and continue playing.`;
                         break;
+                    case 'tetris':
+                        content = `it's a pop song that never asked to be understood, nor to be loved.<br>It just asks to be danced to.<br>It's about when you finally think you've found some balance in<br>your life, but in the end you realize it's just an illusion.<br>Just like Tetris`;
+                        break;
+                    case 'ringo-starr':
+                        content = `This song explains how it is important for each of us to carefully<br>preserve our uncertainties and learn to be less rigid and more forgiving with ourselves.`;
+                        break;
                 }
                 sestaslide.querySelector('a').innerHTML = content;
             });
