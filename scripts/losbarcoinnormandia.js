@@ -1,8 +1,34 @@
 const primaslide = document.getElementsByClassName('primaslide')[0];
 const secondaslide = document.getElementsByClassName('secondaslide')[0];
 const terzaslide = document.getElementsByClassName('terzaslide')[0];
+const quintaslide = document.getElementsByClassName('quintaslide')[0];
 
 const paragraph = document.getElementsByClassName('paragraph')[0];
+
+(() => {
+    let songselem = document.getElementsByClassName('song');
+    /**
+     * @type {[HTMLDivElement]}
+     */
+    let songs = [];
+    for (let i = 0; i < songselem.length; i++) {
+        let s = songselem.item(i);
+        if (
+            s.parentElement && s.parentElement.parentElement && s.parentElement.parentElement.parentElement && s.parentElement.parentElement.parentElement.parentElement
+            && s.parentElement.parentElement.parentElement.parentElement.classList.contains('quintaslide')
+        ) {
+            songs.push(s);
+            s.addEventListener('click', (ev) => {
+                if (s.classList.contains('selected')) {
+                    s.classList.toggle('selected');
+                } else {
+                    songs.filter(c => c.classList.contains('selected')).forEach(c => c.classList.remove('selected'));
+                    s.classList.toggle('selected');
+                }
+            });
+        }
+    }
+})();
 
 /**
  * @type {[HTMLDivElement]}
@@ -19,7 +45,8 @@ let _2021 = document.getElementById('date_2021');
 let _2022 = document.getElementById('date_2022');
 let _2023 = document.getElementById('date_2023');
 
-let slide = 4;
+// let slide = 4;
+let slide = 0;
 let count = -1;
 
 function updateslides() {
@@ -52,9 +79,10 @@ function update() {
         } else if (count == 5) {
             paragraph.innerHTML = 'Record for the number of paying people at an Italian concert at the <span class="ff-helveticabold">RCF Arena</span> in <span class="ff-helveticabold">Reggio Emilia</span>, with over <span class="ff-helveticabold">80.000</span> spectators. <i>(September 9th)</i>';
         }
-    }else {
+    } else if (!quintaslide.classList.contains('hidden') && document.getElementsByClassName('selected').length < 1) {
+    } else {
         slide++;
-        if(slide > 5) slide = 1;
+        if (slide > 5) slide = 1;
         updateslides();
         count = -1;
     }
