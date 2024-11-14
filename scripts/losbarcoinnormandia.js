@@ -32,6 +32,14 @@ const paragraph = document.getElementsByClassName('paragraph')[0];
                 sestacanzone.querySelector('img').src = s.querySelector('img').src;
                 sestacanzone.querySelector('h1').textContent = s.querySelector('h1').textContent;
                 sestacanzone.querySelector('h6').textContent = s.querySelector('h6').textContent;
+
+                let content = 'Nothing';
+                switch(s.querySelector('h1').textContent.toLowerCase().replaceAll(' ','-')) {
+                    case 'sudowoodo':
+                        content = `The moral of Sudowoodo is "never judge what you can't water".<br>This phrase has two meanings:<br><br>1) Never judge anything we haven't taken care of (or don't know about)<br>2) In a gameboy pokemon game, if you watered Sudowoodo while he was sleeping on the path,<br>he would wake up and show himself as pokemon rock, then you<br>could defeat him or capture him and continue playing.`;
+                        break;
+                }
+                sestaslide.querySelector('a').innerHTML = content;
             });
         }
     }
