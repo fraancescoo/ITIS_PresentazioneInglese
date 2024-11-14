@@ -2,6 +2,9 @@ const primaslide = document.getElementsByClassName('primaslide')[0];
 const secondaslide = document.getElementsByClassName('secondaslide')[0];
 const terzaslide = document.getElementsByClassName('terzaslide')[0];
 const quintaslide = document.getElementsByClassName('quintaslide')[0];
+const sestaslide = document.getElementsByClassName('sestaslide')[0];
+
+const sestacanzone = sestaslide.getElementsByClassName('song')[0];
 
 const paragraph = document.getElementsByClassName('paragraph')[0];
 
@@ -25,6 +28,10 @@ const paragraph = document.getElementsByClassName('paragraph')[0];
                     songs.filter(c => c.classList.contains('selected')).forEach(c => c.classList.remove('selected'));
                     s.classList.toggle('selected');
                 }
+
+                sestacanzone.querySelector('img').src = s.querySelector('img').src;
+                sestacanzone.querySelector('h1').textContent = s.querySelector('h1').textContent;
+                sestacanzone.querySelector('h6').textContent = s.querySelector('h6').textContent;
             });
         }
     }
@@ -45,8 +52,7 @@ let _2021 = document.getElementById('date_2021');
 let _2022 = document.getElementById('date_2022');
 let _2023 = document.getElementById('date_2023');
 
-// let slide = 4;
-let slide = 0;
+let slide = 4;
 let count = -1;
 
 function updateslides() {
@@ -82,7 +88,7 @@ function update() {
     } else if (!quintaslide.classList.contains('hidden') && document.getElementsByClassName('selected').length < 1) {
     } else {
         slide++;
-        if (slide > 5) slide = 1;
+        if (slide > 6) slide = 1;
         updateslides();
         count = -1;
     }
