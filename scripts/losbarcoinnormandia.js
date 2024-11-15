@@ -44,6 +44,12 @@ const paragraph = document.getElementsByClassName('paragraph')[0];
                     case 'ringo-starr':
                         content = `This song explains how it is important for each of us to carefully<br>preserve our uncertainties and learn to be less rigid and more forgiving with ourselves.`;
                         break;
+                    case 'dentista-croazia':
+                        content = `Song dedicated to their cheap van, their first van that accompanied them on lots of adventures.<br>The song is called "Dentista Croazia" because on that van there was a big writing "Dentista Croazia", since there were<br>other people who rented that van with them.`;
+                        break;
+                    case '79':
+                        content = `Riccardo had to get an 80 to enter an English university, but his teachers gave him a 79.`;
+                        break;
                 }
                 sestaslide.querySelector('a').innerHTML = content;
             });
