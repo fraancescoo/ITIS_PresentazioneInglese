@@ -510,7 +510,10 @@ input:focus {
     color: #555555;
 }
 
-.song:hover,
+.song:hover {
+    box-shadow: 0px 0px 0.5vh 0.5vh #0EA999;
+}
+
 .song.selected {
     box-shadow: 0px 0px 1vh 1vh #0EA999;
 }
